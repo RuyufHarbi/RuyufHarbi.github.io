@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Brittany Signature';
+  src: url('fonts/BrittanySignature.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f9;
+  color: #222;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1f2937;
+  color: #fff;
+}
+
+.site-title {
+  font-size: 1.35rem;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Brittany Signature', cursive;
+  color: #fff;
+}
+
+.top-nav {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.top-nav button {
+  border: none;
+  background: #3b82f6;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.top-nav button:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.hero {
+  padding: 3rem 0 2rem;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+section {
+  margin-bottom: 2.5rem;
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 680px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .top-nav {
+    justify-content: center;
+  }
+}
